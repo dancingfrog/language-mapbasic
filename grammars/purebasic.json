@@ -9,6 +9,9 @@
   "patterns":
   [
     {
+      "include": "#comments"
+    },
+    {
       "match": "\\b(EnableExplicit|EndProcedure|EndStructure|ForEver|Global|Procedure|Protected|Repeat|Structure|Until)\\b",
       "name": "keyword",
       "comment": "Generic and stand-alone keywords."
@@ -31,10 +34,20 @@
   ],
   "repository":
   {
-    "statements":
+    "comments":
     {
       "patterns":
       [
+        {
+          "match": "^[^;]*(;.*)$",
+          "captures":
+          {
+            "1":
+            {
+              "name": "punctuation.definition.comment.purebasic"
+            }
+          }
+        }
       ]
     }
   }

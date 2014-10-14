@@ -22,6 +22,8 @@ Procedure.s ComplexProcedureDeclaration(With.s = "Default Value", #AndOtherStuff
 
   Protected SomeVariable.i, *Pointer
 
+  ComposedString = "Containing" + "Keywords like Procedure or Repeat" ;!
+
 EndProcedure
 
 Global *Address = @SimpleProcedureDeclaration()
