@@ -1,0 +1,14 @@
+{
+  "name": "language-purebasic",
+  "main": "./lib/language-purebasic",
+  "version": "0.1.0",
+  "description": "Adds syntax highlighting and snippets to PureBasic files in Atom.",
+  "activationEvents": ["language-purebasic:toggle"],
+  "repository": "https://github.com/alomvar/language-purebasic",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

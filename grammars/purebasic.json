@@ -1,0 +1,41 @@
+{
+  "scopeName": "source.purebasic",
+  "name": "PureBasic",
+  "fileTypes":
+  [
+    "pb",
+    "pbi"
+  ],
+  "patterns":
+  [
+    {
+      "match": "\\b(EnableExplicit|EndProcedure|EndStructure|ForEver|Global|Procedure|Protected|Repeat|Structure|Until)\\b",
+      "name": "keyword",
+      "comment": "Generic and stand-alone keywords."
+    },
+    {
+      "name": "string.quoted.double.purebasic",
+      "begin": "\"",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.purebasic"
+        }
+      },
+      "end": "\"",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.purebasic"
+        }
+      }
+    }
+  ],
+  "repository":
+  {
+    "statements":
+    {
+      "patterns":
+      [
+      ]
+    }
+  }
+}
