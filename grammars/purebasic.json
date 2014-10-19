@@ -69,7 +69,7 @@
       "patterns":
       [
         {
-          "match": "\\b(Else|End|EndIf|ForEach|ForEver|If|Repeat|Until)\\b",
+          "match": "\\b(Else|End|EndIf|ForEach|ForEver|If|Next|Repeat|Until)\\b",
           "name": "keyword.control.purebasic"
         },
         {
