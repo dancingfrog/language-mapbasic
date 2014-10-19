@@ -12,9 +12,7 @@
       "include": "#comments"
     },
     {
-      "match": "\\b(EnableExplicit|EndProcedure|EndStructure|ForEver|Global|Procedure|Protected|Repeat|Structure|Until)\\b",
-      "name": "keyword",
-      "comment": "Generic and stand-alone keywords."
+      "include": "#keywords"
     },
     {
       "name": "string.quoted.double.purebasic",
@@ -47,6 +45,17 @@
               "name": "punctuation.definition.comment.purebasic"
             }
           }
+        }
+      ]
+    },
+    "keywords":
+    {
+      "patterns":
+      [
+        {
+          "match": "\\b(EndEnumeration|EnableExplicit|EndProcedure|EndStructure|Enumeration|ForEver|Global|Procedure|Protected|Repeat|Structure|Until)\\b",
+          "name": "keyword",
+          "comment": "Generic and stand-alone keywords."
         }
       ]
     }
