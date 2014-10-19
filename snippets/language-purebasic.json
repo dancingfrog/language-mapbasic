@@ -1,8 +1,12 @@
 {
     ".source.purebasic": {
+        "Enumeration": {
+            "prefix": "En",
+            "body": "Enumeration${1}\n\n\t${2}\n\nEndEnumeration"
+        },
         "Procedure": {
             "prefix": "Proc",
-            "body": "Procedure{$1} ${2:Unnamed}(${3})\n\n\t${4:; Not implemented yet.}\n\nEndProcedure\n"
+            "body": "Procedure${1} ${2:Unnamed}(${3})\n\n\t${4:; Not implemented yet.}\n\nEndProcedure\n"
         },
         "ProcedureDLL": {
             "prefix": "ProcedureD",
