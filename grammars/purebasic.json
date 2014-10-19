@@ -15,6 +15,12 @@
       "include": "#keywords"
     },
     {
+      "include": "#constants"
+    },
+    {
+      "include": "#storage-modifiers"
+    },
+    {
       "name": "string.quoted.double.purebasic",
       "begin": "\"",
       "beginCaptures": {
@@ -26,6 +32,16 @@
       "endCaptures": {
         "0": {
           "name": "punctuation.definition.string.end.purebasic"
+        }
+      }
+    },
+    {
+      "match": "(\\b\\w[\\w\\d]*)\\(",
+      "captures":
+      {
+        "1":
+        {
+          "name": "entity.name.function.purebasic"
         }
       }
     }
@@ -53,9 +69,40 @@
       "patterns":
       [
         {
-          "match": "\\b(EndEnumeration|EnableExplicit|EndProcedure|EndStructure|Enumeration|ForEver|Global|Procedure|Protected|Repeat|Structure|Until)\\b",
-          "name": "keyword",
-          "comment": "Generic and stand-alone keywords."
+          "match": "\\b(Else|End|EndIf|ForEach|ForEver|If|Repeat|Until)\\b",
+          "name": "keyword.control.purebasic"
+        },
+        {
+          "match": "\\b(And|Not|Or)\\b",
+          "name": "keyword.operator.purebasic"
+        },
+        {
+          "match": "\\b(EndEnumeration|EnableExplicit|EndProcedure|EndStructure|Enumeration|Global|IncludeFile|Procedure|ProcedureDLL|ProcedureReturn|Protected|Structure|XIncludeFile)\\b",
+          "name": "keyword.other.purebasic"
+        }
+      ]
+    },
+    "constants":
+    {
+      "patterns":
+      [
+        {
+          "match": "#([\\w_]+)\\b",
+          "name": "constant.language.purebasic"
+        },
+        {
+          "match": "\\b\\d+(\\.\\d+)?\\b",
+          "name": "constant.numeric.purebasic"
+        }
+      ]
+    },
+    "storage-modifiers":
+    {
+      "patterns":
+      [
+        {
+          "match": "\\b(Global|Protected|Shared|Static)\\b",
+          "name": "storage.modifier.purebasic"
         }
       ]
     }
