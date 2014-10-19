@@ -4,6 +4,10 @@
       "prefix": "En",
       "body": "Enumeration${1}\n\n\t${2}\n\nEndEnumeration"
     },
+    "Foreach … Next": {
+      "prefix": "ForEach",
+      "body": "ForEach ${1:LinkedList}()\n\n\t${2}\n\nNext"
+    },
     "IncludeFile": {
       "prefix": "Inc",
       "body": "IncludeFile \"${1}\""
