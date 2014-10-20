@@ -9,74 +9,54 @@
   "patterns":
   [
     {
-      "include": "#strings"
+      "match": "\\\"[^\"]*\\\"",
+      "name": "string.quoted.double.purebasic"
     },
     {
-      "include": "#comments"
+      "match": "(;.*)$",
+      "name": "comment.line.purebasic"
     },
     {
-      "include": "#structures",
-      "disabled": 1
+      "match": "\\b(Break|ContinueElse|End|EndIf|ForEach|ForEver|If|Next|Repeat|Until)\\b",
+      "name": "keyword.control.purebasic"
     },
     {
-      "include": "#keywords"
-    }
-  ],
-  "repository":
-  {
-    "structures":
+      "match": "\\b(And|Not|Or|XOr)\\b",
+      "name": "keyword.operator.logical.purebasic"
+    },
     {
-      "begin": "(Structure)\\s+(\\w[\\w\\d]*)",
-      "beginCaptures":
+      "match": "(<|>|<>|<=|>=)",
+      "name": "keyword.operator.comparison.purebasic"
+    },
+    {
+      "match": "=",
+      "name": "keyword.operator.assignment.purebasic"
+    },
+    {
+      "match": "\\b(Procedure|ProcedureDLL|ProcedureReturn|EndProcedure|Macro|EndMacro|DataSection|EndDataSection|Structure|EndStructure)\\b",
+      "name": "keyword.other.purebasic"
+    },
+    {
+      "match": "\\b(Global|Protected|Static)\\b",
+      "name": "storage.modifier.purebasic"
+    },
+    {
+      "match": "#([\\w_]+)\\b",
+      "name": "constant.language.purebasic"
+    },
+    {
+      "match": "\\b\\d+(\\.\\d+)?\\b",
+      "name": "constant.numeric.purebasic"
+    },
+    {
+      "match": "(\\b\\w[\\w\\d]*|[^\\w]@[\\w\\d]*)\\(",
+      "captures":
       {
         "1":
         {
-          "name": "keyword.other.purebasic"
-        },
-        "2":
-        {
-          "name": "storage.type.purebasic"
+          "name": "entity.name.function.purebasic"
         }
-      },
-      "end": "EndStructure",
-      "endCaptures":
-      {
-        "0":
-        {
-          "name": "keyword.other.purebasic"
-        }
-      },
-      "name": "meta.structure.purebasic"
-    },
-    "comments":
-    {
-      "patterns":
-      [
-        {
-          "match": "(;.*)$",
-          "name": "comment.line.purebasic"
-        }
-      ]
-    },
-    "strings":
-    {
-      "patterns":
-      [
-        {
-          "match": "\\\"[^\"]*\\\"",
-          "name": "string.quoted.double.purebasic"
-        }
-      ]
-    },
-    "keywords":
-    {
-      "patterns":
-      [
-        {
-          "match": "\\b(If|Else|EndIf|Procedure|ProcedureDLL|ProcedureReturn|EndProcedure|Macro|EndMacro|DataSection|EndDataSection|Repeat|While|Wend|Until|ForEver|ForEach|Next|Break|Continue|Structure|EndStructure)\\b",
-          "name": "keyword.other.purebasic"
-        }
-      ]
+      }
     }
-  }
+  ]
 }
