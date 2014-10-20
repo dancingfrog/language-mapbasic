@@ -21,6 +21,40 @@
       "include": "#storage-modifiers"
     },
     {
+      "match": "(Procedure|ProcedureDLL)\\s+(\\w+)\\(",
+      "name": "meta.function.purebasic",
+      "captures":
+      {
+        "1":
+        {
+          "name": "keyword.other.purebasic"
+        },
+        "2":
+        {
+          "name": "entity.name.function.purebasic"
+        }
+      }
+    },
+    {
+      "match": "(Procedure|ProcedureDLL)\\.(\\w+)\\s+(\\w+)\\(",
+      "name": "meta.function.purebasic",
+      "captures":
+      {
+        "1":
+        {
+          "name": "keyword.other.purebasic"
+        },
+        "2":
+        {
+          "name": "storage.type.purebasic"
+        },
+        "3":
+        {
+          "name": "entity.name.function.purebasic"
+        }
+      }
+    },
+    {
       "name": "string.quoted.double.purebasic",
       "begin": "\"",
       "beginCaptures": {
@@ -32,16 +66,6 @@
       "endCaptures": {
         "0": {
           "name": "punctuation.definition.string.end.purebasic"
-        }
-      }
-    },
-    {
-      "match": "(\\b\\w[\\w\\d]*)\\(",
-      "captures":
-      {
-        "1":
-        {
-          "name": "entity.name.function.purebasic"
         }
       }
     }
@@ -77,7 +101,7 @@
           "name": "keyword.operator.purebasic"
         },
         {
-          "match": "\\b(EndEnumeration|EnableExplicit|EndProcedure|EndStructure|Enumeration|Global|IncludeFile|Procedure|ProcedureDLL|ProcedureReturn|Protected|Structure|XIncludeFile)\\b",
+          "match": "\\b(EndEnumeration|EnableExplicit|EndProcedure|EndStructure|Enumeration|Global|IncludeFile|ProcedureReturn|Protected|Structure|XIncludeFile)\\b",
           "name": "keyword.other.purebasic"
         }
       ]
