@@ -9,36 +9,25 @@
   "patterns":
   [
     {
+      "include": "#strings"
+    },
+    {
       "include": "#comments"
     },
     {
+      "include": "#structures",
+      "disabled": 1
+    },
+    {
       "include": "#keywords"
-    },
+    }
+  ],
+  "repository":
+  {
+    "structures":
     {
-      "include": "#constants"
-    },
-    {
-      "include": "#storage-modifiers"
-    },
-    {
-      "match": "(Procedure|ProcedureDLL)\\s+(\\w+)\\(",
-      "name": "meta.function.purebasic",
-      "captures":
-      {
-        "1":
-        {
-          "name": "keyword.other.purebasic"
-        },
-        "2":
-        {
-          "name": "entity.name.function.purebasic"
-        }
-      }
-    },
-    {
-      "match": "(Procedure|ProcedureDLL)\\.(\\w+)\\s+(\\w+)\\(",
-      "name": "meta.function.purebasic",
-      "captures":
+      "begin": "(Structure)\\s+(\\w[\\w\\d]*)",
+      "beginCaptures":
       {
         "1":
         {
@@ -47,44 +36,35 @@
         "2":
         {
           "name": "storage.type.purebasic"
-        },
-        "3":
-        {
-          "name": "entity.name.function.purebasic"
-        }
-      }
-    },
-    {
-      "name": "string.quoted.double.purebasic",
-      "begin": "\"",
-      "beginCaptures": {
-        "0": {
-          "name": "punctuation.definition.string.begin.purebasic"
         }
       },
-      "end": "\"",
-      "endCaptures": {
-        "0": {
-          "name": "punctuation.definition.string.end.purebasic"
+      "end": "EndStructure",
+      "endCaptures":
+      {
+        "0":
+        {
+          "name": "keyword.other.purebasic"
         }
-      }
-    }
-  ],
-  "repository":
-  {
+      },
+      "name": "meta.structure.purebasic"
+    },
     "comments":
     {
       "patterns":
       [
         {
-          "match": "^[^;]*(;.*)$",
-          "captures":
-          {
-            "1":
-            {
-              "name": "punctuation.definition.comment.purebasic"
-            }
-          }
+          "match": "(;.*)$",
+          "name": "comment.line.purebasic"
+        }
+      ]
+    },
+    "strings":
+    {
+      "patterns":
+      [
+        {
+          "match": "\\\"[^\"]*\\\"",
+          "name": "string.quoted.double.purebasic"
         }
       ]
     },
@@ -93,40 +73,8 @@
       "patterns":
       [
         {
-          "match": "\\b(Else|End|EndIf|ForEach|ForEver|If|Next|Repeat|Until)\\b",
-          "name": "keyword.control.purebasic"
-        },
-        {
-          "match": "\\b(And|Not|Or)\\b",
-          "name": "keyword.operator.purebasic"
-        },
-        {
-          "match": "\\b(EndEnumeration|EnableExplicit|EndProcedure|EndStructure|Enumeration|Global|IncludeFile|ProcedureReturn|Protected|Structure|XIncludeFile)\\b",
+          "match": "\\b(If|Else|EndIf|Procedure|ProcedureDLL|ProcedureReturn|EndProcedure|Macro|EndMacro|DataSection|EndDataSection|Repeat|While|Wend|Until|ForEver|ForEach|Next|Break|Continue|Structure|EndStructure)\\b",
           "name": "keyword.other.purebasic"
-        }
-      ]
-    },
-    "constants":
-    {
-      "patterns":
-      [
-        {
-          "match": "#([\\w_]+)\\b",
-          "name": "constant.language.purebasic"
-        },
-        {
-          "match": "\\b\\d+(\\.\\d+)?\\b",
-          "name": "constant.numeric.purebasic"
-        }
-      ]
-    },
-    "storage-modifiers":
-    {
-      "patterns":
-      [
-        {
-          "match": "\\b(Global|Protected|Shared|Static)\\b",
-          "name": "storage.modifier.purebasic"
         }
       ]
     }
