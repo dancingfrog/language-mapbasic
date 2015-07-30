@@ -1,4 +1,10 @@
 ".source.purebasic":
+  "EnableExplicit":
+    prefix: "EnableExplicit"
+    body: '''
+      EnableExplicit
+      ${1}
+    '''
   "Enumeration block":
     prefix: "En"
     body: '''
