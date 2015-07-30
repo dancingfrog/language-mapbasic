@@ -1,0 +1,70 @@
+".source.purebasic":
+  "Enumeration block":
+    prefix: "En"
+    body: '''
+      Enumeration${1}
+
+      	${2}
+
+      EndEnumeration
+    '''
+  "Foreach … Next":
+    prefix: "ForEach"
+    body: '''
+      ForEach ${1:LinkedList}()
+
+      	${2}
+
+      Next
+    '''
+  IncludeFile:
+    prefix: "Inc"
+    body: "IncludeFile \"${1}\""
+  "If … EndIf":
+    prefix: "If"
+    body: '''
+      If ${1}
+
+      	${2}
+
+      EndIf
+    '''
+  "Procedure implementation":
+    prefix: "Proc"
+    body: '''
+      Procedure${1} ${2:Unnamed}(${3})
+
+      	${4:; Not implemented yet.}
+
+      EndProcedure
+    '''
+  "ProcedureDLL implementation":
+    prefix: "ProcedureD"
+    body: '''
+      ProcedureDLL{$1} ${2:Unnamed}(${3})
+
+      	${4:; Not implemented yet.}
+
+      EndProcedure
+    '''
+  "Repeat … ForEver":
+    prefix: "Re"
+    body: '''
+      Repeat
+
+      	{$1}
+
+      ForEver
+    '''
+  "Repeat … Until …":
+    prefix: "Re"
+    body: '''
+      Repeat
+
+      	{$2}
+
+      Until ${1}
+    '''
+  XIncludeFile:
+    prefix: "XInc"
+    body: "XIncludeFile \"${1}\""
