@@ -62,6 +62,15 @@
 
       ForEver
     '''
+  "While … Wend":
+    prefix: "While"
+    body: '''
+      While $1
+
+        $2
+
+      Wend
+    '''
   "Repeat … Until …":
     prefix: "Re"
     body: '''
