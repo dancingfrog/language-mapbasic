@@ -33,7 +33,7 @@
       "name": "keyword.operator.assignment.purebasic"
     },
     {
-      "match": "\\b(EnableExplicit|Procedure|ProcedureDLL|ProcedureReturn|EndProcedure|Macro|EndMacro|DataSection|EndDataSection|Structure|EndStructure)\\b",
+      "match": "\\b(Debug|EnableExplicit|Procedure|ProcedureDLL|ProcedureReturn|EndProcedure|Macro|EndMacro|DataSection|EndDataSection|Structure|EndStructure)\\b",
       "name": "keyword.other.purebasic"
     },
     {

@@ -1,4 +1,10 @@
 ".source.purebasic":
+  "Debug Expression":
+    prefix: "Debug"
+    body: '''
+      Debug ${1:Expression}
+      $2
+    '''
   "EnableExplicit":
     prefix: "EnableExplicit"
     body: '''
