@@ -1,0 +1,7 @@
+'.source.purebasic':
+  'RGB (Red, Green, Blue)':
+    'prefix': 'RGB'
+    'body': 'RGB(${1:Red}, ${2:Green}, ${3:Blue})$4'
+  'RGBA (Red, Green, Blue, Alpha)':
+    'prefix': 'RGBA'
+    'body': 'RGB(${1:Red}, ${2:Green}, ${3:Blue}, ${4:Alpha}})$5'
