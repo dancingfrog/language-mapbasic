@@ -1,7 +1,298 @@
 '.source.purebasic':
-  'RGB (Red, Green, Blue)':
-    'prefix': 'RGB'
-    'body': 'RGB(${1:Red}, ${2:Green}, ${3:Blue})$4'
-  'RGBA (Red, Green, Blue, Alpha)':
-    'prefix': 'RGBA'
-    'body': 'RGB(${1:Red}, ${2:Green}, ${3:Blue}, ${4:Alpha}})$5'
+  'AbortFTPFile (#Ftp) - Abort the current asyncrhonous file operation.':
+    'prefix': 'AbortFTPFile'
+    'body': 'AbortFTPFile(${1:#Ftp})$2'
+  'Abs (Value) - Returns the absolute value (no sign) of the given float value.':
+    'prefix': 'Abs'
+    'body': 'Abs(${1:Value})$2'
+  'ACos (Number) - Returns the arc cosine of the specified number, in radian.':
+    'prefix': 'ACos'
+    'body': 'ACos(${1:Number})$2'
+  'ACosH (Number) - Returns the area hyperbolic cosine of the specified number.':
+    'prefix': 'ACosH'
+    'body': 'ACosH(${1:Number})$2'
+  'Add3DArchive (Name$, Type) - Add a new archive as path to search.':
+    'prefix': 'Add3DArchive'
+    'body': 'Add3DArchive(${1:Name.s})$2'
+  'AddBillboard (#BillboardGroup, x, y, z) - Add a billboard to the #BillboardGroup.':
+    'prefix': 'AddBillboard'
+    'body': 'AddBillboard(${1:#BillboardGroup}, ${2:x}, ${3:y})$4'
+  'AddCipherBuffer (#Cipher, *Input, *Output, Size) - Add a new buffer to the #Cipher.':
+    'prefix': 'AddCipherBuffer'
+    'body': 'AddCipherBuffer(${1:#Cipher}, ${2:*Input}, ${3:*Output})$4'
+  'AddDate (Date, Type, Value) - Returns a new date.':
+    'prefix': 'AddDate'
+    'body': 'AddDate(${1:Date}, ${2:Type})$3'
+  'AddElement (List()) - Adds a new empty element after the current element.':
+    'prefix': 'AddElement'
+    'body': 'AddElement(${1:List()})$2'
+  'AddEntityAnimationTime (#Entity, Animation$, Time) - Add time to the specified #Entity animation.':
+    'prefix': 'AddEntityAnimationTime'
+    'body': 'AddEntityAnimationTime(${1:#Entity}, ${2:Animation.s})$3'
+  'AddGadgetColumn (#Gadget, Position, Title$, Width) - Add a column to the specified #Gadget.':
+    'prefix': 'AddGadgetColumn'
+    'body': 'AddGadgetColumn(${1:#Gadget}, ${2:Position}, ${3:Title.s})$4'
+  'AddGadgetItem (#Gadget, Position, Text$ [, ImageID [, Flags]]) - Add an item to a gadget (ListView, ComboBox etc...)':
+    'prefix': 'AddGadgetItem'
+    'body': 'AddGadgetItem(${1:#Gadget}, ${2:Position})$3'
+  'AddGadgetItem3D (#Gadget3D, Position, Text$) - Add an item to a gadget (ListView, ComboBox etc...)':
+    'prefix': 'AddGadgetItem3D'
+    'body': 'AddGadgetItem3D(${1:#Gadget3D}, ${2:Position})$3'
+  'AddJSONElement (*JSONValue [, Index]) - Add an element to a JSON array':
+    'prefix': 'AddJSONElement'
+    'body': 'AddJSONElement(${1:*JSONValue})$2'
+  'AddJSONMember (*JSONValue, Key$) - Add a member to a JSON object':
+    'prefix': 'AddJSONMember'
+    'body': 'AddJSONMember(${1:*JSONValue})$2'
+  'AddKeyboardShortcut (#Window, Key, Event) - Add a keyboard shortcut to the specified #Window.':
+    'prefix': 'AddKeyboardShortcut'
+    'body': 'AddKeyboardShortcut(${1:#Window}, ${2:Key})$3'
+  'AddMailAttachment (#Mail, Description$, Filename$ [, MimeType$]) - Add a file attachement.':
+    'prefix': 'AddMailAttachment'
+    'body': 'AddMailAttachment(${1:#Mail}, ${2:Description.s})$3'
+  'AddMailAttachmentData (#Mail, Description$, *Buffer, Size [, MimeType$]) - Add a file attachement from a memory area.':
+    'prefix': 'AddMailAttachmentData'
+    'body': 'AddMailAttachmentData(${1:#Mail}, ${2:Description.s}, ${3:*Buffer})$4'
+  'AddMailRecipient (#Mail, Address$, Flags) - Add a recipient to the specified #Mail.':
+    'prefix': 'AddMailRecipient'
+    'body': 'AddMailRecipient(${1:#Mail}, ${2:Address.s})$3'
+  'AddMapElement (Map(), Key$ [, Flags]) - Adds a new empty element in the map.':
+    'prefix': 'AddMapElement'
+    'body': 'AddMapElement(${1:Map()})$2'
+  'AddMaterialLayer (#Material, TextureID [, Mode [, TextureCoordinateIndex]) - Add a new texture layer to the #Material.':
+    'prefix': 'AddMaterialLayer'
+    'body': 'AddMaterialLayer(${1:#Material})$2'
+  'AddNodeAnimationTime (#NodeAnimation, Time) - Add time to the specified #NodeAnimation.':
+    'prefix': 'AddNodeAnimationTime'
+    'body': 'AddNodeAnimationTime(${1:#NodeAnimation})$2'
+  'AddPackFile (#Pack, Filename$, PackedFilename$) - Add and compress the file to pack file.':
+    'prefix': 'AddPackFile'
+    'body': 'AddPackFile(${1:#Pack}, ${2:Filename.s})$3'
+  'AddPackMemory (#Pack, *Buffer, Size, PackedFilename$) - Add and compress the memory area to pack file.':
+    'prefix': 'AddPackMemory'
+    'body': 'AddPackMemory(${1:#Pack}, ${2:*Buffer}, ${3:Size})$4'
+  'AddSplinePoint (#Spline, x, y, z)':
+    'prefix': 'AddSplinePoint'
+    'body': 'AddSplinePoint(${1:#Spline}, ${2:x}, ${3:y})$4'
+  'AddStaticGeometryEntity (#StaticGeometry, EntityID, x, y, z [, ScaleX, ScaleY, ScaleZ [, RotateX, RotateY, RotateZ]])':
+    'prefix': 'AddStaticGeometryEntity'
+    'body': 'AddStaticGeometryEntity(${1:#StaticGeometry}, ${2:EntityID}, ${3:x}, ${4:y})$5'
+  'AddStatusBarField (Width) - Add a field to the current Status Bar previously created with CreateStatusBar().':
+    'prefix': 'AddStatusBarField'
+    'body': 'AddStatusBarField(${1:Width})$2'
+  'AddSubMesh ([Type])':
+    'prefix': 'AddSubMesh'
+    'body': 'AddSubMesh()$1'
+  'AddSysTrayIcon (#SysTrayIcon, WindowID, ImageID) - Add an icon in the SysTray area.':
+    'prefix': 'AddSysTrayIcon'
+    'body': 'AddSysTrayIcon(${1:#SysTrayIcon}, ${2:WindowID})$3'
+  'AddTerrainTexture (#Terrain, Layer, WorldSize, DiffuseSpecular$, NormalHeight$) - Add a texture to the #Terrain.':
+    'prefix': 'AddTerrainTexture'
+    'body': 'AddTerrainTexture(${1:#Terrain}, ${2:Layer}, ${3:WorldSize}, ${4:DiffuseSpecular.s})$5'
+  'AddVertexPoseReference (#Mesh, Animation$, Track, Index, PoseIndex, Influence) - Add a new vertex pose reference to the #Mesh track.':
+    'prefix': 'AddVertexPoseReference'
+    'body': 'AddVertexPoseReference(${1:#Mesh}, ${2:Animation.s}, ${3:Track}, ${4:Index}, ${5:PoseIndex})$6'
+  'AddWindowTimer (#Window, Timer, Timeout) - Add a timer event to the window.':
+    'prefix': 'AddWindowTimer'
+    'body': 'AddWindowTimer(${1:#Window}, ${2:Timer})$3'
+  'AESDecoder (*Input, *Output, Size, *Key, Bits, *InitializationVector [, Mode]) - Decodes the specified buffer using the AES algorithm.':
+    'prefix': 'AESDecoder'
+    'body': 'AESDecoder(${1:*Input}, ${2:*Output}, ${3:Size}, ${4:*Key}, ${5:Bits})$6'
+  'AESEncoder (*Input, *Output, Size, *Key, Bits, *InitializationVector [, Mode]) - Encodes the specified buffer using the AES algorithm.':
+    'prefix': 'AESEncoder'
+    'body': 'AESEncoder(${1:*Input}, ${2:*Output}, ${3:Size}, ${4:*Key}, ${5:Bits})$6'
+  'AffectedDatabaseRows (#Database) - Get number of rows affected by a database update.':
+    'prefix': 'AffectedDatabaseRows'
+    'body': 'AffectedDatabaseRows(${1:#Database})$2'
+  'AllocateMemory (Size [, Flags]) - Allocates a contiguous memory area according to the specified size and returns the buffer start.':
+    'prefix': 'AllocateMemory'
+    'body': 'AllocateMemory(${1:Size})$2'
+  'AllocateStructure (StructureName)':
+    'prefix': 'AllocateStructure'
+    'body': 'AllocateStructure(${1:StructureName})$2'
+  'Alpha (Color) - Returns the alpha component of the given color':
+    'prefix': 'Alpha'
+    'body': 'Alpha(${1:Color})$2'
+  'AlphaBlend (Color1, Color2) - Returns the result of blending Color1 on Color2 with alphachannel.':
+    'prefix': 'AlphaBlend'
+    'body': 'AlphaBlend(${1:Color1})$2'
+  'AmbientColor (Color) - Changes the ambient color of the world':
+    'prefix': 'AmbientColor'
+    'body': 'AmbientColor(${1:Color})$2'
+  'AntialiasingMode (Mode) - Set the fullscreen antialising mode for the 3D world.':
+    'prefix': 'AntialiasingMode'
+    'body': 'AntialiasingMode(${1:Mode})$2'
+  'ApplyEntityForce (#Entity, x, y, z [, PositionX, PositionY, PositionZ]) - Apply a force to #Entity':
+    'prefix': 'ApplyEntityForce'
+    'body': 'ApplyEntityForce(${1:#Entity}, ${2:x}, ${3:y})$4'
+  'ApplyEntityImpulse (#Entity, x, y, z [, PositionX, PositionY, PositionZ]) - Apply a force to #Entity':
+    'prefix': 'ApplyEntityImpulse'
+    'body': 'ApplyEntityImpulse(${1:#Entity}, ${2:x}, ${3:y})$4'
+  'ArraySize (Array() [, Dimension]) - Returns the array size.':
+    'prefix': 'ArraySize'
+    'body': 'ArraySize(${1:Array()})$2'
+  'Asc (String) - Returns the ASCII value of the first character in the string.':
+    'prefix': 'Asc'
+    'body': 'Asc(${1:String})$2'
+  'ASin (Number) - Returns the arc sine of the specified number, in radian.':
+    'prefix': 'ASin'
+    'body': 'ASin(${1:Number})$2'
+  'ASinH (Number) - Returns the area hyperbolic sine of the specified number.':
+    'prefix': 'ASinH'
+    'body': 'ASinH(${1:Number})$2'
+  'ATan (Number) - Returns the arc tangent of the specified number, in radian.':
+    'prefix': 'ATan'
+    'body': 'ATan(${1:Number})$2'
+  'ATan2 (x, y) - Returns the Arc-Tangent of x/y, in radian.':
+    'prefix': 'ATan2'
+    'body': 'ATan2(${1:x})$2'
+  'ATanH (Number) - Returns the area hyperbolic tangent of the specified number.':
+    'prefix': 'ATanH'
+    'body': 'ATanH(${1:Number})$2'
+  'AttachEntityObject (#Entity, Bone$, ObjectID [, x, y, z, Pitch, Yaw, Roll]) - Attach an object to the #Entity.':
+    'prefix': 'AttachEntityObject'
+    'body': 'AttachEntityObject(${1:#Entity}, ${2:Bone.s})$3'
+  'AttachNodeObject (#Node, ObjectID) - Attach an object to the #Node.':
+    'prefix': 'AttachNodeObject'
+    'body': 'AttachNodeObject(${1:#Node})$2'
+  'AttachRibbonEffect (#Effect, NodeID) - Attach the ribbon #Effect to the node.':
+    'prefix': 'AttachRibbonEffect'
+    'body': 'AttachRibbonEffect(${1:#Effect})$2'
+  'AudioCDLength () - Returns the full length of an CD-Audio in seconds.':
+    'prefix': 'AudioCDLength'
+    'body': 'AudioCDLength()$1'
+  'AudioCDName () - Returns the name, system dependent, attached to the current CD-Audio drive.':
+    'prefix': 'AudioCDName'
+    'body': 'AudioCDName()$1'
+  'AudioCDStatus () - Possible values: -1 Ready; 0 Stopped; >0 Audio track which is currently playing.':
+    'prefix': 'AudioCDStatus'
+    'body': 'AudioCDStatus()$1'
+  'AudioCDTrackLength (TrackNumber) - Returns the length of the specified track, in seconds.':
+    'prefix': 'AudioCDTrackLength'
+    'body': 'AudioCDTrackLength(${1:TrackNumber})$2'
+  'AudioCDTracks () - Return the total numbers of tracks on the CD available for playing.':
+    'prefix': 'AudioCDTracks'
+    'body': 'AudioCDTracks()$1'
+  'AudioCDTrackSeconds () - Return the number of seconds elapsed since the current track has being start to play.':
+    'prefix': 'AudioCDTrackSeconds'
+    'body': 'AudioCDTrackSeconds()$1'
+  'AvailableProgramOutput (Program) - returns the number of bytes available for reading':
+    'prefix': 'AvailableProgramOutput'
+    'body': 'AvailableProgramOutput(${1:Program})$2'
+  'AvailableScreenMemory () - Returns the video memory available for the sprites.':
+    'prefix': 'AvailableScreenMemory'
+    'body': 'AvailableScreenMemory()$1'
+  'AvailableSerialPortInput (#SerialPort) - Return the number of remaining bytes in the input buffer.':
+    'prefix': 'AvailableSerialPortInput'
+    'body': 'AvailableSerialPortInput(${1:#SerialPort})$2'
+  'AvailableSerialPortOutput (#SerialPort) - Return the number of remaining bytes in the output buffer.':
+    'prefix': 'AvailableSerialPortOutput'
+    'body': 'AvailableSerialPortOutput(${1:#SerialPort})$2'
+  'BackColor (Color) - Set the default background color for graphic functions and text display.':
+    'prefix': 'BackColor'
+    'body': 'BackColor(${1:Color})$2'
+  'Base64Decoder (*Input, InputSize, *Output, OutputSize) - Decodes the specified buffer using the Base64 algorithm.':
+    'prefix': 'Base64Decoder'
+    'body': 'Base64Decoder(${1:*Input}, ${2:InputSize}, ${3:*Output})$4'
+  'Base64Encoder (*Input, InputSize, *Output, OutputSize [, Flags]) - Encodes the specified buffer using the Base64 algorithm.':
+    'prefix': 'Base64Encoder'
+    'body': 'Base64Encoder(${1:*Input}, ${2:InputSize}, ${3:*Output})$4'
+  'BillboardGroupCommonDirection (#BillboardGroup, x, y, z) - Set the billboardgroup common direction.':
+    'prefix': 'BillboardGroupCommonDirection'
+    'body': 'BillboardGroupCommonDirection(${1:#BillboardGroup}, ${2:x}, ${3:y})$4'
+  'BillboardGroupCommonUpVector (#BillboardGroup, x, y, z) - Set the billboardgroup common up vector.':
+    'prefix': 'BillboardGroupCommonUpVector'
+    'body': 'BillboardGroupCommonUpVector(${1:#BillboardGroup}, ${2:x}, ${3:y})$4'
+  'BillboardGroupID (#BillboardGroup) - Returns the unique ID which identifies the billboard group in the operating system.':
+    'prefix': 'BillboardGroupID'
+    'body': 'BillboardGroupID(${1:#BillboardGroup})$2'
+  'BillboardGroupMaterial (#BillboardGroup, MaterialID) - Change the #BillboardGroup material used by all the billboards.':
+    'prefix': 'BillboardGroupMaterial'
+    'body': 'BillboardGroupMaterial(${1:#BillboardGroup})$2'
+  'BillboardGroupX (#BillboardGroup [, Mode]) - Returns the #BillboardGroup X absolute position.':
+    'prefix': 'BillboardGroupX'
+    'body': 'BillboardGroupX(${1:#BillboardGroup})$2'
+  'BillboardGroupY (#BillboardGroup [, Mode]) - Returns the #BillboardGroup Y absolute position.':
+    'prefix': 'BillboardGroupY'
+    'body': 'BillboardGroupY(${1:#BillboardGroup})$2'
+  'BillboardGroupZ (#BillboardGroup [, Mode]) - Returns the #BillboardGroup Z absolute position.':
+    'prefix': 'BillboardGroupZ'
+    'body': 'BillboardGroupZ(${1:#BillboardGroup})$2'
+  'BillboardHeight (#Billboard, #BillboardGroup) - Returns the #Billboard height, in world metric.':
+    'prefix': 'BillboardHeight'
+    'body': 'BillboardHeight(${1:#Billboard})$2'
+  'BillboardLocate (#Billboard, #BillboardGroup, x, y, z) - Change the #Billboard absolute location, relative to the #BillboardGroup.':
+    'prefix': 'BillboardLocate'
+    'body': 'BillboardLocate(${1:#Billboard}, ${2:#BillboardGroup}, ${3:x}, ${4:y})$5'
+  'BillboardWidth (#Billboard, #BillboardGroup) - Returns the #Billboard width, in world metric.':
+    'prefix': 'BillboardWidth'
+    'body': 'BillboardWidth(${1:#Billboard})$2'
+  'BillboardX (#Billboard, #BillboardGroup) - Returns the #Billboard X absolute position in the #BillboardGroup.':
+    'prefix': 'BillboardX'
+    'body': 'BillboardX(${1:#Billboard})$2'
+  'BillboardY (#Billboard, #BillboardGroup) - Returns the #Billboard Y absolute position in the #BillboardGroup.':
+    'prefix': 'BillboardY'
+    'body': 'BillboardY(${1:#Billboard})$2'
+  'BillboardZ (#Billboard, #BillboardGroup) - Returns the #Billboard Z absolute position in the #BillboardGroup.':
+    'prefix': 'BillboardZ'
+    'body': 'BillboardZ(${1:#Billboard})$2'
+  'Bin (Number.q [, Type]) - Converts a number in binary string form.':
+    'prefix': 'Bin'
+    'body': 'Bin(${1:Number.q})$2'
+  'BindEvent (Event, @Callback() [, Window [, Object [, EventType]]]) - Bind an event to a callback.':
+    'prefix': 'BindEvent'
+    'body': 'BindEvent(${1:Event})$2'
+  'BindGadgetEvent (#Gadget, @Callback() [, EventType]) - Bind a gadget event to a callback.':
+    'prefix': 'BindGadgetEvent'
+    'body': 'BindGadgetEvent(${1:#Gadget})$2'
+  'BindMenuEvent (#Menu, MenuItem, @Callback()) - Bind a menu item event to a callback.':
+    'prefix': 'BindMenuEvent'
+    'body': 'BindMenuEvent(${1:#Menu}, ${2:MenuItem})$3'
+  'Blue (Color) - Returns the blue component of the given color':
+    'prefix': 'Blue'
+    'body': 'Blue(${1:Color})$2'
+  'Box (x, y, Width, Height [, Color]) - Draw a filled box of given dimensions on the current output.':
+    'prefix': 'Box'
+    'body': 'Box(${1:x}, ${2:y}, ${3:Width})$4'
+  'BoxedGradient (x, y, Width, Height) - Use a box shaped gradient when gradint drawing is enabled.':
+    'prefix': 'BoxedGradient'
+    'body': 'BoxedGradient(${1:x}, ${2:y}, ${3:Width})$4'
+  'BuildMeshShadowVolume (#Mesh)':
+    'prefix': 'BuildMeshShadowVolume'
+    'body': 'BuildMeshShadowVolume(${1:#Mesh})$2'
+  'BuildMeshTangents (#Mesh)':
+    'prefix': 'BuildMeshTangents'
+    'body': 'BuildMeshTangents(${1:#Mesh})$2'
+  'BuildStaticGeometry (#StaticGeometry)':
+    'prefix': 'BuildStaticGeometry'
+    'body': 'BuildStaticGeometry(${1:#StaticGeometry})$2'
+  'BuildTerrain (#Terrain) - Construct the #Terrain.':
+    'prefix': 'BuildTerrain'
+    'body': 'BuildTerrain(${1:#Terrain})$2'
+  'ButtonGadget (#Gadget, x, y, Width, Height, Text$ [, Flags]) - Create a button gadget in the current GadgetList.':
+    'prefix': 'ButtonGadget'
+    'body': 'ButtonGadget(${1:#Gadget}, ${2:x}, ${3:y}, ${4:Width}, ${5:Height})$6'
+  'ButtonGadget3D (#Gadget3D, x, y, Width, Height, Text$) - Create a button gadget in the current GadgetList':
+    'prefix': 'ButtonGadget3D'
+    'body': 'ButtonGadget3D(${1:#Gadget3D}, ${2:x}, ${3:y}, ${4:Width}, ${5:Height})$6'
+  'ButtonImageGadget (#Gadget, x, y, Width, Height, ImageID [, Flags]) - Create a button gadget in the current GadgetList.':
+    'prefix': 'ButtonImageGadget'
+    'body': 'ButtonImageGadget(${1:#Gadget}, ${2:x}, ${3:y}, ${4:Width}, ${5:Height})$6'
+  'CalendarGadget (#Gadget, x, y, Width, Height [, Date [, Flags]]) - Create Date selection Calendar':
+    'prefix': 'CalendarGadget'
+    'body': 'CalendarGadget(${1:#Gadget}, ${2:x}, ${3:y}, ${4:Width})$5'
+  'CallCFunction (#Library, FunctionName$, [Arg1, [Arg2, ...]]) - Call a C function using its name.':
+    'prefix': 'CallCFunction'
+    'body': 'CallCFunction(${1:#Library}, ${2:FunctionName.s})$3'
+  'CallCFunctionFast (*Function, [Arg1, [Arg2, ...]]) - Call a C function quickly, using its pointer.':
+    'prefix': 'CallCFunctionFast'
+    'body': 'CallCFunctionFast(${1:*Function})$2'
+  'CallFunction (#Library, FunctionName$, [Arg1, [Arg2, ...]]) - Call a function using its name.':
+    'prefix': 'CallFunction'
+    'body': 'CallFunction(${1:#Library}, ${2:FunctionName.s})$3'
+  'CallFunctionFast (*Function, [Arg1, [Arg2, ...]]) - Call a function quickly, using its pointer.':
+    'prefix': 'CallFunctionFast'
+    'body': 'CallFunctionFast(${1:*Function})$2'
+  'CameraBackColor (#Camera, Color) - Changes the #Camera background color.':
+    'prefix': 'CameraBackColor'
+    'body': 'CameraBackColor(${1:#Camera})$2'
