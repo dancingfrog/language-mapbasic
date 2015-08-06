@@ -42,7 +42,7 @@
       EndIf
     '''
   "Procedure implementation":
-    prefix: "Proc"
+    prefix: "Procedure"
     body: '''
       Procedure${1} ${2:Unnamed}(${3})
 
@@ -51,9 +51,9 @@
       EndProcedure
     '''
   "ProcedureDLL implementation":
-    prefix: "ProcedureD"
+    prefix: "ProcedureDLL"
     body: '''
-      ProcedureDLL{$1} ${2:Unnamed}(${3})
+      ProcedureDLL${1} ${2:Unnamed}(${3})
 
       	${4:; Not implemented yet.}
 
