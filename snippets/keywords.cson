@@ -59,6 +59,9 @@
 
       EndProcedure
     '''
+  "Procedure return":
+    prefix: ""
+    body: "ProcedureReturn ${1}"
   "Repeat … ForEver":
     prefix: "Re"
     body: '''
