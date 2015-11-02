@@ -77,6 +77,13 @@
 
       Wend
     '''
+  "Structure … EndStructure":
+    prefix: "Structure"
+    body: '''
+      Structure $1
+        $2
+      EndStructure
+    '''
   "Repeat … Until …":
     prefix: "Re"
     body: '''
