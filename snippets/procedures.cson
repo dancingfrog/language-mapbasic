@@ -614,7 +614,7 @@
   'ComboBoxGadget3D (#Gadget3D, x, y, Width, Height [, Flags]) - Create a combobox gadget in the current GadgetList.':
     'prefix': 'ComboBoxGadget3D'
     'body': 'ComboBoxGadget3D(${1:#Gadget3D}, ${2:x}, ${3:y}, ${4:Width})$5'
-  'CompareMemory (SourceMemory, DestinationMemory, Length) - Compares two memory areas and returns 1 if its equal or 0 if it doesn't match.':
+  'CompareMemory (SourceMemory, DestinationMemory, Length) - Compares two memory areas and returns 1 if its equal or 0 if it doesn\'t match.':
     'prefix': 'CompareMemory'
     'body': 'CompareMemory(${1:SourceMemory}, ${2:DestinationMemory})$3'
   'CompareMemoryString (*String1, *String2 [, Mode [, Length [, Flags]]]) - Returns 0 if *String1 equals *String2, -1 or 1 if *String1 is below or above than *String2.':
@@ -710,7 +710,7 @@
   'CopyMaterial (#Material, #NewMaterial) - Copy the specified #Material on the #NewMaterial.':
     'prefix': 'CopyMaterial'
     'body': 'CopyMaterial(${1:#Material})$2'
-  'CopyMemory (SourceMemory, DestinationMemory, Length) - Copy a memory area from 'SourceMemory' to 'DestinationMemory'.':
+  'CopyMemory (SourceMemory, DestinationMemory, Length) - Copy a memory area from \'SourceMemory\' to \'DestinationMemory\'.':
     'prefix': 'CopyMemory'
     'body': 'CopyMemory(${1:SourceMemory}, ${2:DestinationMemory})$3'
   'CopyMemoryString (*String [, DestinationMemory]) - Copy the *String to destination memory address or after the last one.':
@@ -914,7 +914,7 @@
   'CreateThread (@Procedure(), Parameter) - Create a new thread running in the application background.':
     'prefix': 'CreateThread'
     'body': 'CreateThread(${1:@Procedure()})$2'
-  'CreateToolBar (#ToolBar, WindowID) - Create an empty toolbar identified by the number '#ToolBar'.':
+  'CreateToolBar (#ToolBar, WindowID) - Create an empty toolbar identified by the number \'#ToolBar\'.':
     'prefix': 'CreateToolBar'
     'body': 'CreateToolBar(${1:#ToolBar})$2'
   'CreateVertexAnimation (#Mesh, Animation$, Length) - Create a new vertex animation for the #mesh.':
@@ -1427,7 +1427,7 @@
   'ExamineDatabaseDrivers () - Examines the installed database drivers available on the system.':
     'prefix': 'ExamineDatabaseDrivers'
     'body': 'ExamineDatabaseDrivers()$1'
-  'ExamineDesktops () - Retrieves informations about user's desktops and returns the number of desktops.':
+  'ExamineDesktops () - Retrieves informations about user\'s desktops and returns the number of desktops.':
     'prefix': 'ExamineDesktops'
     'body': 'ExamineDesktops()$1'
   'ExamineDirectory (#Directory, DirectoryName$, Pattern$) - Start to examine the specified directory for future listing.':
@@ -1637,7 +1637,7 @@
   'FrameGadget3D (#Gadget3D, x, y, Width, Height, Text$) - Creates a Frame3D gadget in the current GadgetList.':
     'prefix': 'FrameGadget3D'
     'body': 'FrameGadget3D(${1:#Gadget3D}, ${2:x}, ${3:y}, ${4:Width}, ${5:Height})$6'
-  'FreeArray (Array()) - Free the array. 'Dim' has to be called to use it again.':
+  'FreeArray (Array()) - Free the array. \'Dim\' has to be called to use it again.':
     'prefix': 'FreeArray'
     'body': 'FreeArray(${1:Array()})$2'
   'FreeBillboardGroup (#BillboardGroup) - Free the specified #BillboardGroup and all its billboards.':
@@ -1685,13 +1685,13 @@
   'FreeLight (#Light) - Free the specified #Light.':
     'prefix': 'FreeLight'
     'body': 'FreeLight(${1:#Light})$2'
-  'FreeList (List()) - Free the list. 'NewList' has to be called to use it again.':
+  'FreeList (List()) - Free the list. \'NewList\' has to be called to use it again.':
     'prefix': 'FreeList'
     'body': 'FreeList(${1:List()})$2'
   'FreeMail (#Mail) - Frees the previously created mail.':
     'prefix': 'FreeMail'
     'body': 'FreeMail(${1:#Mail})$2'
-  'FreeMap (Map()) - Free the map. 'NewMap' has to be called to use it again.':
+  'FreeMap (Map()) - Free the map. \'NewMap\' has to be called to use it again.':
     'prefix': 'FreeMap'
     'body': 'FreeMap(${1:Map()})$2'
   'FreeMaterial (#Material) - Free the specified #Material.':
@@ -2126,7 +2126,7 @@
   'GetURLPart (URL$, Parameter$) - Get the specific part of an URL.':
     'prefix': 'GetURLPart'
     'body': 'GetURLPart(${1:URL.s})$2'
-  'GetW () - Get the 'w' value of the last call.':
+  'GetW () - Get the \'w\' value of the last call.':
     'prefix': 'GetW'
     'body': 'GetW()$1'
   'GetWindowColor (#Window) - Get the background color of the window.':
@@ -2144,7 +2144,7 @@
   'GetWindowTitle3D (#Window3D) - Gets the current #Window3D title.':
     'prefix': 'GetWindowTitle3D'
     'body': 'GetWindowTitle3D(${1:#Window3D})$2'
-  'GetX () - Get the 'x' value of the last call.':
+  'GetX () - Get the \'x\' value of the last call.':
     'prefix': 'GetX'
     'body': 'GetX()$1'
   'GetXMLAttribute (Node, Attribute$) - Get the value of the given attribute of the XML node':
@@ -2165,10 +2165,10 @@
   'GetXMLStandalone (#XML) - Get the standalone mode of the XML document':
     'prefix': 'GetXMLStandalone'
     'body': 'GetXMLStandalone(${1:#XML})$2'
-  'GetY () - Get the 'y' value of the last call.':
+  'GetY () - Get the \'y\' value of the last call.':
     'prefix': 'GetY'
     'body': 'GetY()$1'
-  'GetZ () - Get the 'z' value of the last call.':
+  'GetZ () - Get the \'z\' value of the last call.':
     'prefix': 'GetZ'
     'body': 'GetZ()$1'
   'GrabDrawingImage (#Image, x, y, Width, Height) - Create a new #Image with the content of the given drawing output area.':
@@ -2369,49 +2369,49 @@
   'IPString (IPAddress [, Format]) - Returns the string representation of the given IP address.':
     'prefix': 'IPString'
     'body': 'IPString(${1:IPAddress})$2'
-  'IsBillboardGroup (#BillboardGroup) - Tests if the given '#BillboardGroup' is an initialized BillboardGroup object.':
+  'IsBillboardGroup (#BillboardGroup) - Tests if the given \'#BillboardGroup\' is an initialized BillboardGroup object.':
     'prefix': 'IsBillboardGroup'
     'body': 'IsBillboardGroup(${1:#BillboardGroup})$2'
-  'IsCamera (#Camera) - Tests if the given '#Camera' is an initialized camera object.':
+  'IsCamera (#Camera) - Tests if the given \'#Camera\' is an initialized camera object.':
     'prefix': 'IsCamera'
     'body': 'IsCamera(${1:#Camera})$2'
-  'IsCipher (#Cipher) - Tests if the given '#Cipher' is an initialized cipher object.':
+  'IsCipher (#Cipher) - Tests if the given \'#Cipher\' is an initialized cipher object.':
     'prefix': 'IsCipher'
     'body': 'IsCipher(${1:#Cipher})$2'
-  'IsDatabase (#Database) - Tests if the given '#Database' is an initialized database object.':
+  'IsDatabase (#Database) - Tests if the given \'#Database\' is an initialized database object.':
     'prefix': 'IsDatabase'
     'body': 'IsDatabase(${1:#Database})$2'
   'IsDialog (#Dialog) - Tests if the given dialog is initialized.':
     'prefix': 'IsDialog'
     'body': 'IsDialog(${1:#Dialog})$2'
-  'IsDirectory (#Directory) - Tests if the given '#Directory' is an initialized directory object.':
+  'IsDirectory (#Directory) - Tests if the given \'#Directory\' is an initialized directory object.':
     'prefix': 'IsDirectory'
     'body': 'IsDirectory(${1:#Directory})$2'
-  'IsEffect (#Effect) - Tests if the given '#Effect' is an initialized effect object.':
+  'IsEffect (#Effect) - Tests if the given \'#Effect\' is an initialized effect object.':
     'prefix': 'IsEffect'
     'body': 'IsEffect(${1:#Effect})$2'
-  'IsEntity (#Entity) - Tests if the given '#Entity' is an initialized entity object.':
+  'IsEntity (#Entity) - Tests if the given \'#Entity\' is an initialized entity object.':
     'prefix': 'IsEntity'
     'body': 'IsEntity(${1:#Entity})$2'
-  'IsFile (#File) - Tests if the given '#File' is an initialized file object.':
+  'IsFile (#File) - Tests if the given \'#File\' is an initialized file object.':
     'prefix': 'IsFile'
     'body': 'IsFile(${1:#File})$2'
-  'IsFingerprint (#Fingerprint) - Tests if the given '#Fingerprint' is an initialized fingerprint object.':
+  'IsFingerprint (#Fingerprint) - Tests if the given \'#Fingerprint\' is an initialized fingerprint object.':
     'prefix': 'IsFingerprint'
     'body': 'IsFingerprint(${1:#Fingerprint})$2'
-  'IsFont (#Font) - Tests if the given '#Font' is an initialized font object.':
+  'IsFont (#Font) - Tests if the given \'#Font\' is an initialized font object.':
     'prefix': 'IsFont'
     'body': 'IsFont(${1:#Font})$2'
-  'IsFTP (#Ftp) - Tests if the given '#Ftp' is an initialized FTP object.':
+  'IsFTP (#Ftp) - Tests if the given \'#Ftp\' is an initialized FTP object.':
     'prefix': 'IsFTP'
     'body': 'IsFTP(${1:#Ftp})$2'
-  'IsGadget (#Gadget) - Tests if the given '#Gadget' is an initialized gadget object.':
+  'IsGadget (#Gadget) - Tests if the given \'#Gadget\' is an initialized gadget object.':
     'prefix': 'IsGadget'
     'body': 'IsGadget(${1:#Gadget})$2'
-  'IsGadget3D (#Gadget3D) - Tests if the given '#Gadget3D' is an initialized gadget object.':
+  'IsGadget3D (#Gadget3D) - Tests if the given \'#Gadget3D\' is an initialized gadget object.':
     'prefix': 'IsGadget3D'
     'body': 'IsGadget3D(${1:#Gadget3D})$2'
-  'IsImage (#Image) - Tests if the given '#Image' is an initialized image object.':
+  'IsImage (#Image) - Tests if the given \'#Image\' is an initialized image object.':
     'prefix': 'IsImage'
     'body': 'IsImage(${1:#Image})$2'
   'IsInfinity (Number) - Returns nonzero if the given Number represents positive or negative infinity.':
@@ -2423,43 +2423,43 @@
   'IsInsideStroke (x.d, y.d, Width.d [, Flags [, CoordinateSystem]]) - Tests whether the given point is inside the area stroked by the current path':
     'prefix': 'IsInsideStroke'
     'body': 'IsInsideStroke(${1:x.d}, ${2:y.d})$3'
-  'IsJoint (#Joint) - Tests if the given '#Joint' is an initialized joint object.':
+  'IsJoint (#Joint) - Tests if the given \'#Joint\' is an initialized joint object.':
     'prefix': 'IsJoint'
     'body': 'IsJoint(${1:#Joint})$2'
   'IsJSON (#JSON) - Check if #JSON represents valid JSON data':
     'prefix': 'IsJSON'
     'body': 'IsJSON(${1:#JSON})$2'
-  'IsLibrary (#Library) - Tests if the given '#Library' is an initialized library object.':
+  'IsLibrary (#Library) - Tests if the given \'#Library\' is an initialized library object.':
     'prefix': 'IsLibrary'
     'body': 'IsLibrary(${1:#Library})$2'
-  'IsLight (#Light) - Tests if the given '#Light' is an initialized light object.':
+  'IsLight (#Light) - Tests if the given \'#Light\' is an initialized light object.':
     'prefix': 'IsLight'
     'body': 'IsLight(${1:#Light})$2'
-  'IsMail (#Mail) - Tests if the given '#Mail' is an initialized mail object.':
+  'IsMail (#Mail) - Tests if the given \'#Mail\' is an initialized mail object.':
     'prefix': 'IsMail'
     'body': 'IsMail(${1:#Mail})$2'
-  'IsMaterial (#Material) - Tests if the given '#Material' is an initialized material object.':
+  'IsMaterial (#Material) - Tests if the given \'#Material\' is an initialized material object.':
     'prefix': 'IsMaterial'
     'body': 'IsMaterial(${1:#Material})$2'
-  'IsMenu (#Menu) - Tests if the given '#Menu' is an initialized menu object.':
+  'IsMenu (#Menu) - Tests if the given \'#Menu\' is an initialized menu object.':
     'prefix': 'IsMenu'
     'body': 'IsMenu(${1:#Menu})$2'
-  'IsMesh (#Mesh) - Tests if the given '#Mesh' is an initialized mesh object.':
+  'IsMesh (#Mesh) - Tests if the given \'#Mesh\' is an initialized mesh object.':
     'prefix': 'IsMesh'
     'body': 'IsMesh(${1:#Mesh})$2'
-  'IsMovie (#Movie) - Tests if the given '#Movie' is an initialized movie object.':
+  'IsMovie (#Movie) - Tests if the given \'#Movie\' is an initialized movie object.':
     'prefix': 'IsMovie'
     'body': 'IsMovie(${1:#Movie})$2'
-  'IsMusic (#Music) - Tests if the given '#Music' is an initialized module object.':
+  'IsMusic (#Music) - Tests if the given \'#Music\' is an initialized module object.':
     'prefix': 'IsMusic'
     'body': 'IsMusic(${1:#Music})$2'
   'IsNAN (Number) - Returns nonzero if the given Number is the special "Not a Number" value.':
     'prefix': 'IsNAN'
     'body': 'IsNAN(${1:Number})$2'
-  'IsNode (#Node) - Tests if the given '#Node' is an initialized node object.':
+  'IsNode (#Node) - Tests if the given \'#Node\' is an initialized node object.':
     'prefix': 'IsNode'
     'body': 'IsNode(${1:#Node})$2'
-  'IsParticleEmitter (#ParticleEmitter) - Tests if the given '#ParticleEmitter' is an initialized ParticleEmitter object.':
+  'IsParticleEmitter (#ParticleEmitter) - Tests if the given \'#ParticleEmitter\' is an initialized ParticleEmitter object.':
     'prefix': 'IsParticleEmitter'
     'body': 'IsParticleEmitter(${1:#ParticleEmitter})$2'
   'IsPathEmpty () - Returns true if the current vector drawing path is empty':
@@ -2468,7 +2468,7 @@
   'IsProgram (Program) - Check if the specified program was created by RunProgram':
     'prefix': 'IsProgram'
     'body': 'IsProgram(${1:Program})$2'
-  'IsRegularExpression (#RegularExpression) - Tests if the given '#RegularExpression' is an initialized regular expression object.':
+  'IsRegularExpression (#RegularExpression) - Tests if the given \'#RegularExpression\' is an initialized regular expression object.':
     'prefix': 'IsRegularExpression'
     'body': 'IsRegularExpression(${1:#RegularExpression})$2'
   'IsRuntime (Name) - Check if the specified item is available at runtime.':
@@ -2477,43 +2477,43 @@
   'IsScreenActive () - If the return is 0, then the screen is no more active, else the screen is active.':
     'prefix': 'IsScreenActive'
     'body': 'IsScreenActive()$1'
-  'IsSerialPort (#SerialPort) - Test if the given '#SerialPort' is an initialized SerialPort object.':
+  'IsSerialPort (#SerialPort) - Test if the given \'#SerialPort\' is an initialized SerialPort object.':
     'prefix': 'IsSerialPort'
     'body': 'IsSerialPort(${1:#SerialPort})$2'
-  'IsSound (#Sound) - Tests if the given '#Sound' is an initialized sound object.':
+  'IsSound (#Sound) - Tests if the given \'#Sound\' is an initialized sound object.':
     'prefix': 'IsSound'
     'body': 'IsSound(${1:#Sound})$2'
-  'IsSound3D (#Sound3D) - Tests if the given '#Sound3D' is an initialized sound object.':
+  'IsSound3D (#Sound3D) - Tests if the given \'#Sound3D\' is an initialized sound object.':
     'prefix': 'IsSound3D'
     'body': 'IsSound3D(${1:#Sound3D})$2'
-  'IsSprite (#Sprite) - Tests if the given '#Sprite' is an initialized sprite object.':
+  'IsSprite (#Sprite) - Tests if the given \'#Sprite\' is an initialized sprite object.':
     'prefix': 'IsSprite'
     'body': 'IsSprite(${1:#Sprite})$2'
-  'IsStaticGeometry (#StaticGeometry) - Tests if the given '#StaticGeometry' is an initialized effect object.':
+  'IsStaticGeometry (#StaticGeometry) - Tests if the given \'#StaticGeometry\' is an initialized effect object.':
     'prefix': 'IsStaticGeometry'
     'body': 'IsStaticGeometry(${1:#StaticGeometry})$2'
-  'IsStatusBar (#StatusBar) - Tests if the given '#StatusBar' is an initialized statusbar object.':
+  'IsStatusBar (#StatusBar) - Tests if the given \'#StatusBar\' is an initialized statusbar object.':
     'prefix': 'IsStatusBar'
     'body': 'IsStatusBar(${1:#StatusBar})$2'
-  'IsSysTrayIcon (#SysTrayIcon) - Tests if the given '#SysTrayIcon' is an initialized systray icon object.':
+  'IsSysTrayIcon (#SysTrayIcon) - Tests if the given \'#SysTrayIcon\' is an initialized systray icon object.':
     'prefix': 'IsSysTrayIcon'
     'body': 'IsSysTrayIcon(${1:#SysTrayIcon})$2'
-  'IsText3D (#Text3D) - Tests if the given '#Text3D' is an initialized text3d object.':
+  'IsText3D (#Text3D) - Tests if the given \'#Text3D\' is an initialized text3d object.':
     'prefix': 'IsText3D'
     'body': 'IsText3D(${1:#Text3D})$2'
-  'IsTexture (#Texture) - Tests if the given '#Texture' is an initialized texture object.':
+  'IsTexture (#Texture) - Tests if the given \'#Texture\' is an initialized texture object.':
     'prefix': 'IsTexture'
     'body': 'IsTexture(${1:#Texture})$2'
   'IsThread (Thread) - Check if the thread exists.':
     'prefix': 'IsThread'
     'body': 'IsThread(${1:Thread})$2'
-  'IsToolBar (#ToolBar) - Tests if the given '#ToolBar' is an initialized toolbar object.':
+  'IsToolBar (#ToolBar) - Tests if the given \'#ToolBar\' is an initialized toolbar object.':
     'prefix': 'IsToolBar'
     'body': 'IsToolBar(${1:#ToolBar})$2'
-  'IsWindow (#Window) - Tests if the given '#Window' is an initialized window object.':
+  'IsWindow (#Window) - Tests if the given \'#Window\' is an initialized window object.':
     'prefix': 'IsWindow'
     'body': 'IsWindow(${1:#Window})$2'
-  'IsWindow3D (#Window3D) - Tests if the given '#Window3D' is an initialized window object.':
+  'IsWindow3D (#Window3D) - Tests if the given \'#Window3D\' is an initialized window object.':
     'prefix': 'IsWindow3D'
     'body': 'IsWindow3D(${1:#Window3D})$2'
   'IsXML (#XML) - Check if #XML represents a valid XML object':
@@ -2585,7 +2585,7 @@
   'LCase (String$) - Returns the original string converted into lower case characters.':
     'prefix': 'LCase'
     'body': 'LCase(${1:String.s})$2'
-  'Left (String$, Length) - Returns the first 'Length' number of characters from the left side of the string.':
+  'Left (String$, Length) - Returns the first \'Length\' number of characters from the left side of the string.':
     'prefix': 'Left'
     'body': 'Left(${1:String.s})$2'
   'Len (String$) - Returns the Character length of the string.':
@@ -2711,10 +2711,10 @@
   'Log10 (x) - Returns the Log in base 10 of the value.':
     'prefix': 'Log10'
     'body': 'Log10(${1:x})$2'
-  'LSet (String$, Length [, Character]) - Pads a string to the left, and adds 'space' characters to fit the specified length.':
+  'LSet (String$, Length [, Character]) - Pads a string to the left, and adds \'space\' characters to fit the specified length.':
     'prefix': 'LSet'
     'body': 'LSet(${1:String.s})$2'
-  'LTrim (String$ [, Character$]) - Removes all the 'space' or given characters located at the beginning of a string.':
+  'LTrim (String$ [, Character$]) - Removes all the \'space\' or given characters located at the beginning of a string.':
     'prefix': 'LTrim'
     'body': 'LTrim(${1:String.s})$2'
   'MailProgress (#Mail) - Returns the current progress of a mail being sent.':
@@ -2825,7 +2825,7 @@
   'MessageRequester (Title$, Text$ [, Flags]) - Open a blocking requester to display some informations.':
     'prefix': 'MessageRequester'
     'body': 'MessageRequester(${1:Title.s})$2'
-  'Mid (String$, StartPos [, Length]) - Extract a string at the specified position from the given 'String$'.':
+  'Mid (String$, StartPos [, Length]) - Extract a string at the specified position from the given \'String$\'.':
     'prefix': 'Mid'
     'body': 'Mid(${1:String.s})$2'
   'Minute (Date) - Returns the minute value of the specified date (between 0 and 59).':
@@ -2885,7 +2885,7 @@
   'MoveLight (#Light, x, y, z [, Mode]) - Move the #Light.':
     'prefix': 'MoveLight'
     'body': 'MoveLight(${1:#Light}, ${2:x}, ${3:y})$4'
-  'MoveMemory (SourceMemory, DestinationMemory, Length) - Move a memory area from 'SourceMemory' to 'DestinationMemory'.':
+  'MoveMemory (SourceMemory, DestinationMemory, Length) - Move a memory area from \'SourceMemory\' to \'DestinationMemory\'.':
     'prefix': 'MoveMemory'
     'body': 'MoveMemory(${1:SourceMemory}, ${2:DestinationMemory})$3'
   'MoveNode (#Node, x, y, z [, Mode]) - Move the #Node.':
@@ -3065,7 +3065,7 @@
   'OpenDatabaseRequester (#Database [, Plugin]) - Opens the standard Windows ODBC requester to choose which database to open.':
     'prefix': 'OpenDatabaseRequester'
     'body': 'OpenDatabaseRequester(${1:#Database})$2'
-  'OpenFile (#File, FileName$ [, Flags]) - Open the designed file or create it if it doesn't exists.':
+  'OpenFile (#File, FileName$ [, Flags]) - Open the designed file or create it if it doesn\'t exists.':
     'prefix': 'OpenFile'
     'body': 'OpenFile(${1:#File})$2'
   'OpenFileRequester (Title$, DefaultFile$, Pattern$, PatternPosition [, Flags]) - Open the standard requester which allow to choose a file.':
@@ -3098,7 +3098,7 @@
   'OpenPreferences (Filename$ [, Flags]) - Open and load a preference file.':
     'prefix': 'OpenPreferences'
     'body': 'OpenPreferences(${1:Filename.s})$2'
-  'OpenScreen (Width, Height, Depth, Title$ [, FlipMode [, RefreshRate]]) - Open a new screen according to the specified 'Width', 'Height' and 'Depth'.':
+  'OpenScreen (Width, Height, Depth, Title$ [, FlipMode [, RefreshRate]]) - Open a new screen according to the specified \'Width\', \'Height\' and \'Depth\'.':
     'prefix': 'OpenScreen'
     'body': 'OpenScreen(${1:Width}, ${2:Height}, ${3:Depth})$4'
   'OpenSerialPort (#SerialPort, SerialPortName$, Bauds, Parity, Data, Stop, HandshakeMode, InputBufferSize, OutputBufferSize) - Open a serial port for use.':
@@ -3275,7 +3275,7 @@
   'Pitch (ObjectID, Value.f, Mode) - Pitch the specifed object.':
     'prefix': 'Pitch'
     'body': 'Pitch(${1:ObjectID}, ${2:Value.f})$3'
-  'PlayAudioCD (StartTrack, EndTrack) - Start to play the CD-Audio from 'StartTrack' until the end of 'EndTrack'.':
+  'PlayAudioCD (StartTrack, EndTrack) - Start to play the CD-Audio from \'StartTrack\' until the end of \'EndTrack\'.':
     'prefix': 'PlayAudioCD'
     'body': 'PlayAudioCD(${1:StartTrack})$2'
   'PlayMovie (#Movie, WindowID) - Start to play a movie previously loaded with LoadMovie() on the specified window.':
@@ -3326,7 +3326,7 @@
   'PokeQ (*MemoryBuffer, Quad.q) - Write a quad (8 bytes) to the specified memory address.':
     'prefix': 'PokeQ'
     'body': 'PokeQ(${1:*MemoryBuffer})$2'
-  'PokeS (*MemoryBuffer, Text$ [, Length [, Flags]]) - Write a string (including the ending '0') to the specified memory address.':
+  'PokeS (*MemoryBuffer, Text$ [, Length [, Flags]]) - Write a string (including the ending \'0\') to the specified memory address.':
     'prefix': 'PokeS'
     'body': 'PokeS(${1:*MemoryBuffer})$2'
   'PokeU (*MemoryBuffer, Unicode.U) - Write an unicode character (2 bytes) to the specified memory address.':
@@ -3428,7 +3428,7 @@
   'RaiseError (ErrorNumber) - Raise the given error and call the error handler or exit':
     'prefix': 'RaiseError'
     'body': 'RaiseError(${1:ErrorNumber})$2'
-  'Random (Maximum [, Minimum]) - Return a random number between 0 (unless 'Minimum' is specified) and the 'Maximum' value.':
+  'Random (Maximum [, Minimum]) - Return a random number between 0 (unless \'Minimum\' is specified) and the \'Maximum\' value.':
     'prefix': 'Random'
     'body': 'Random(${1:Maximum})$2'
   'RandomData (*Buffer, Length) - Fill the buffer with bytes from the random number generator.':
@@ -3626,7 +3626,7 @@
   'RemovePreferenceKey (Name$) - Remove the specified key from the current group.':
     'prefix': 'RemovePreferenceKey'
     'body': 'RemovePreferenceKey(${1:Name.s})$2'
-  'RemoveString (String$, RemoveString$ [, Mode [, StartPosition [, NbOccurences]]]) - Finds occurrences of 'StringToRemove$' into the given 'String$' and removes them.':
+  'RemoveString (String$, RemoveString$ [, Mode [, StartPosition [, NbOccurences]]]) - Finds occurrences of \'StringToRemove$\' into the given \'String$\' and removes them.':
     'prefix': 'RemoveString'
     'body': 'RemoveString(${1:String.s})$2'
   'RemoveSysTrayIcon (#SysTrayIcon) - Remove the icon from the Systray area.':
@@ -3650,7 +3650,7 @@
   'ReplaceRegularExpression (#RegularExpression, String$, ReplaceString$) - Replace some strings according to the regular expression.':
     'prefix': 'ReplaceRegularExpression'
     'body': 'ReplaceRegularExpression(${1:#RegularExpression}, ${2:String.s})$3'
-  'ReplaceString (String$, StringToFind$, StringToReplace$ [, Mode [, StartPosition [, NbOccurences]]]) - Replaces occurrences of 'StringToFind$' with 'StringToReplace$' in the given 'String$'.':
+  'ReplaceString (String$, StringToFind$, StringToReplace$ [, Mode [, StartPosition [, NbOccurences]]]) - Replaces occurrences of \'StringToFind$\' with \'StringToReplace$\' in the given \'String$\'.':
     'prefix': 'ReplaceString'
     'body': 'ReplaceString(${1:String.s}, ${2:StringToFind.s})$3'
   'ResetCoordinates ([System]) - Reset the vector drawing coordinate system to the default':
@@ -3740,7 +3740,7 @@
   'RibbonEffectWidth (#Effect, ChainIndex, Width, FadeoutWidth)':
     'prefix': 'RibbonEffectWidth'
     'body': 'RibbonEffectWidth(${1:#Effect}, ${2:ChainIndex}, ${3:Width})$4'
-  'Right (String$, Length) - Returns the last 'Length' number of characters from the right side of the string.':
+  'Right (String$, Length) - Returns the last \'Length\' number of characters from the right side of the string.':
     'prefix': 'Right'
     'body': 'Right(${1:String.s})$2'
   'Roll (ObjectID, Value.f, Mode) - Roll the specifed object.':
@@ -3782,10 +3782,10 @@
   'RoundBox (x, y, Width, Height, RoundX, RoundY [, Color]) - Draw a box with rounded edges on the current output.':
     'prefix': 'RoundBox'
     'body': 'RoundBox(${1:x}, ${2:y}, ${3:Width}, ${4:Height}, ${5:RoundX})$6'
-  'RSet (String$, Length [, Character]) - Pads a string to the right, and adds 'space' characters to fit the specified length.':
+  'RSet (String$, Length [, Character]) - Pads a string to the right, and adds \'space\' characters to fit the specified length.':
     'prefix': 'RSet'
     'body': 'RSet(${1:String.s})$2'
-  'RTrim (String$ [, Character$]) - Removes all the 'space' or given characters located at the end of a string.':
+  'RTrim (String$ [, Character$]) - Removes all the \'space\' or given characters located at the end of a string.':
     'prefix': 'RTrim'
     'body': 'RTrim(${1:String.s})$2'
   'RunProgram (ProgramName$ [, Parameter$, WorkingDirectory$ [, Flags [, SenderProgram]]]) - Launch an external program.':
@@ -4328,7 +4328,7 @@
   'SoundVolume3D (#Sound3D, Volume) - Set the new volume for the #Sound3D. Values are from 0 to 100.':
     'prefix': 'SoundVolume3D'
     'body': 'SoundVolume3D(${1:#Sound3D})$2'
-  'Space (Length) - Create an empty string of the given 'Length' filled with 'space' characters.':
+  'Space (Length) - Create an empty string of the given \'Length\' filled with \'space\' characters.':
     'prefix': 'Space'
     'body': 'Space(${1:Length})$2'
   'SpinGadget (#Gadget, x, y, Width, Height, Minimum, Maximum [, Flags]) - Create a Spin gadget in the current GadgetList.':
@@ -4427,10 +4427,10 @@
   'StatusBarImage (#StatusBar, Field, ImageID [, Appearance]) - Set an image to display in the specified statusbar field.':
     'prefix': 'StatusBarImage'
     'body': 'StatusBarImage(${1:#StatusBar}, ${2:Field})$3'
-  'StatusBarProgress (#StatusBar, Field, Value [, Appearance [, Min, Max]]) - Set the specified 'Field' to display a progressbar.':
+  'StatusBarProgress (#StatusBar, Field, Value [, Appearance [, Min, Max]]) - Set the specified \'Field\' to display a progressbar.':
     'prefix': 'StatusBarProgress'
     'body': 'StatusBarProgress(${1:#StatusBar}, ${2:Field})$3'
-  'StatusBarText (#StatusBar, Field, Text$ [, Appearance]) - Change the text of the specified 'Field' in the given '#StatusBar'.':
+  'StatusBarText (#StatusBar, Field, Text$ [, Appearance]) - Change the text of the specified \'Field\' in the given \'#StatusBar\'.':
     'prefix': 'StatusBarText'
     'body': 'StatusBarText(${1:#StatusBar}, ${2:Field})$3'
   'StickyWindow (#Window, State) - Make the window stay in front of all other windows.':
@@ -4655,7 +4655,7 @@
   'TreeGadget3D (#Gadget3D, x, y, Width, Height [, Flags]) - Create a Tree gadget in the current GadgetList.':
     'prefix': 'TreeGadget3D'
     'body': 'TreeGadget3D(${1:#Gadget3D}, ${2:x}, ${3:y}, ${4:Width})$5'
-  'Trim (String$ [, Character$]) - Removes all the 'space' or given characters located at the beginning and at the end of a string.':
+  'Trim (String$ [, Character$]) - Removes all the \'space\' or given characters located at the beginning and at the end of a string.':
     'prefix': 'Trim'
     'body': 'Trim(${1:String.s})$2'
   'TruncateFile (#File) - End the file at the current position and cut all following data.':
@@ -5045,7 +5045,7 @@
   'WriteStringFormat (#File, Format) - Write a BOM (Byte Order Mark) to identify the string format used in the file.':
     'prefix': 'WriteStringFormat'
     'body': 'WriteStringFormat(${1:#File})$2'
-  'WriteStringN (#File, Text$ [, Format]) - Write a string to the specified file and add the 'end of line' character.':
+  'WriteStringN (#File, Text$ [, Format]) - Write a string to the specified file and add the \'end of line\' character.':
     'prefix': 'WriteStringN'
     'body': 'WriteStringN(${1:#File})$2'
   'WriteUnicodeCharacter (#File, Number) - Write an unicode character to the specified file.':
