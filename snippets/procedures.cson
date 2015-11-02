@@ -4526,6 +4526,9 @@
   'Defined (Name, Type) - Returns 1 if the object is defined, or 0 if not.':
     'prefix': 'Defined'
     'body': 'Defined(${1:Name})$2'
+  'OffsetOf (Structure\Field) - Returns the offset of the specified structure field.':
+    'prefix': 'OffsetOf'
+    'body': 'OffsetOf(${1:Structure\Field})$2'
   'SizeOf (Structure) - Returns the size of the given structure.':
     'prefix': 'SizeOf'
     'body': 'SizeOf(${1:Structure})$2'
