@@ -3047,6 +3047,9 @@
   'OnErrorExit () - Exit the program if an error occurs':
     'prefix': 'OnErrorExit'
     'body': 'OnErrorExit()$1'
+  'OnErrorGoto (?LabelAddress) - Continue execution at the given label if an error occurs':
+    'prefix': 'OnErrorGoto'
+    'body': 'OnErrorGoto(${1:?LabelAddress})$2'
   'OpenConsole ([Title$]) - Open a console window.':
     'prefix': 'OpenConsole'
     'body': 'OpenConsole()$1'
