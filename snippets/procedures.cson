@@ -2675,6 +2675,9 @@
   'LoadMovie (#Movie, FileName$) - Try to open and prepare a movie for later playback.':
     'prefix': 'LoadMovie'
     'body': 'LoadMovie(${1:#Movie})$2'
+  'LoadMusic (#Music, "FileName") - Load the specified module into memory.':
+    'prefix': 'LoadMusic'
+    'body': 'LoadMusic(${1:#Music})$2'
   'LoadSound (#Sound, FileName$ [, Flags]) - Load the specified sound into memory.':
     'prefix': 'LoadSound'
     'body': 'LoadSound(${1:#Sound})$2'
