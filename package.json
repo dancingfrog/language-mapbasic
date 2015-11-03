@@ -1,7 +1,7 @@
 {
   "name": "language-purebasic",
   "main": "./lib/language-purebasic",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Adds syntax highlighting and snippets to PureBasic files in Atom.",
   "activationCommands": {
     "atom-text-editor": [
@@ -13,6 +13,5 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
