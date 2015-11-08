@@ -844,7 +844,7 @@
     'body': 'CreateMutex()$1'
   'CreateNetworkServer (ServerID, Port [, Type [, BindedIP$]]) - Create a new network server on the local computer at the specified port.':
     'prefix': 'CreateNetworkServer'
-    'body': 'CreateNetworkServer(${1:ServerID})$2'
+    'body': 'CreateNetworkServer(${1:ServerID}, ${2:Port})$3'
   'CreateNode (#Node [, x, y, z]) - Create a new #Node.':
     'prefix': 'CreateNode'
     'body': 'CreateNode(${1:#Node})$2'
