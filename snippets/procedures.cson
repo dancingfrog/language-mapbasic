@@ -40,7 +40,7 @@
     'body': 'AddGadgetColumn(${1:#Gadget}, ${2:Position}, ${3:Title.s})$4'
   'AddGadgetItem (#Gadget, Position, Text$ [, ImageID [, Flags]]) - Add an item to a gadget (ListView, ComboBox etc...)':
     'prefix': 'AddGadgetItem'
-    'body': 'AddGadgetItem(${1:#Gadget}, ${2:Position})$3'
+    'body': 'AddGadgetItem(${1:#Gadget}, ${2:Position}, ${3:Text.s})$4'
   'AddGadgetItem3D (#Gadget3D, Position, Text$) - Add an item to a gadget (ListView, ComboBox etc...)':
     'prefix': 'AddGadgetItem3D'
     'body': 'AddGadgetItem3D(${1:#Gadget3D}, ${2:Position})$3'
