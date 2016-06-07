@@ -17,7 +17,7 @@
       "name": "comment.line.purebasic"
     },
     {
-      "match": "\\b(Break|ContinueElse|End|EndIf|Else|ForEach|ForEver|If|Next|Repeat|Until|Wend|While)\\b",
+      "match": "\\b(Break|ContinueElse|End|EndIf|ElseIf|Else|ForEach|ForEver|If|Next|Repeat|Until|Wend|While)\\b",
       "name": "keyword.control.purebasic"
     },
     {
@@ -33,7 +33,7 @@
       "name": "keyword.operator.assignment.purebasic"
     },
     {
-      "match": "\\b(Debug|EnableExplicit|NewList|Enumeration|EndEnumeration|Procedure|ProcedureDLL|ProcedureReturn|EndProcedure|Macro|EndMacro|DataSection|EndDataSection|Structure|EndStructure|IncludeFile|XIncludeFile)\\b",
+      "match": "\\b(Debug|EnableExplicit|NewList|Enumeration|EndEnumeration|Procedure|ProcedureDLL|ProcedureReturn|EndProcedure|Macro|EndMacro|DataSection|EndDataSection|Structure|Extends|EndStructure|IncludeFile|XIncludeFile)\\b",
       "name": "keyword.other.purebasic"
     },
     {
