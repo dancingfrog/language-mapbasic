@@ -1,14 +1,14 @@
 {
-  "name": "language-purebasic",
-  "main": "./lib/language-purebasic",
+  "name": "language-mapbasic",
+  "main": "./lib/language-mapbasic",
   "version": "1.1.4",
-  "description": "Adds syntax highlighting and snippets to PureBasic files in Atom.",
+  "description": "Adds syntax highlighting and snippets to MapBasic files in Atom.",
   "activationCommands": {
     "atom-text-editor": [
-      "language-purebasic:toggle"
+      "language-mapbasic:toggle"
     ]
   },
-  "repository": "https://github.com/alomvar/language-purebasic",
+  "repository": "https://github.com/dancingfrog/language-mapbasic",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

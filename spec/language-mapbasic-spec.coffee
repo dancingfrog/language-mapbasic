@@ -1,5 +1,5 @@
 {WorkspaceView} = require 'atom'
-LanguagePurebasic = require '../lib/language-purebasic'
+LanguagePurebasic = require '../lib/language-mapbasic'
 
 # Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 #
@@ -11,20 +11,20 @@ describe "LanguagePurebasic", ->
 
   beforeEach ->
     atom.workspaceView = new WorkspaceView
-    activationPromise = atom.packages.activatePackage('language-purebasic')
+    activationPromise = atom.packages.activatePackage('language-mapbasic')
 
-  describe "when the language-purebasic:toggle event is triggered", ->
+  describe "when the language-mapbasic:toggle event is triggered", ->
     it "attaches and then detaches the view", ->
-      expect(atom.workspaceView.find('.language-purebasic')).not.toExist()
+      expect(atom.workspaceView.find('.language-mapbasic')).not.toExist()
 
       # This is an activation event, triggering it will cause the package to be
       # activated.
-      atom.workspaceView.trigger 'language-purebasic:toggle'
+      atom.workspaceView.trigger 'language-mapbasic:toggle'
 
       waitsForPromise ->
         activationPromise
 
       runs ->
-        expect(atom.workspaceView.find('.language-purebasic')).toExist()
-        atom.workspaceView.trigger 'language-purebasic:toggle'
-        expect(atom.workspaceView.find('.language-purebasic')).not.toExist()
+        expect(atom.workspaceView.find('.language-mapbasic')).toExist()
+        atom.workspaceView.trigger 'language-mapbasic:toggle'
+        expect(atom.workspaceView.find('.language-mapbasic')).not.toExist()
