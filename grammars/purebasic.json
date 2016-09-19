@@ -1,52 +1,52 @@
 {
-  "scopeName": "source.purebasic",
-  "name": "PureBasic",
+  "scopeName": "source.mapbasic",
+  "name": "MapBasic",
   "fileTypes":
   [
-    "pb",
-    "pbi"
+    "mb",
+    "mbi"
   ],
   "patterns":
   [
     {
       "match": "\\\"[^\"]*\\\"",
-      "name": "string.quoted.double.purebasic"
+      "name": "string.quoted.double.mapbasic"
     },
     {
       "match": "(;.*)$",
-      "name": "comment.line.purebasic"
+      "name": "comment.line.mapbasic"
     },
     {
-      "match": "\\b(Break|ContinueElse|End|EndIf|ElseIf|Else|ForEach|ForEver|If|Next|Repeat|Until|Wend|While)\\b",
-      "name": "keyword.control.purebasic"
+      "match": "\\b(Break|ContinueElse|End|EndIf|ElseIf|Else|ForEach|ForEver|If|Next|Repeat|Sub|Until|Wend|While)\\b",
+      "name": "keyword.control.mapbasic"
     },
     {
       "match": "\\b(And|Not|Or|XOr)\\b",
-      "name": "keyword.operator.logical.purebasic"
+      "name": "keyword.operator.logical.mapbasic"
     },
     {
       "match": "(<|>|<>|<=|>=)",
-      "name": "keyword.operator.comparison.purebasic"
+      "name": "keyword.operator.comparison.mapbasic"
     },
     {
       "match": "=",
-      "name": "keyword.operator.assignment.purebasic"
+      "name": "keyword.operator.assignment.mapbasic"
     },
     {
       "match": "\\b(Debug|EnableExplicit|NewList|Enumeration|EndEnumeration|Procedure|ProcedureDLL|ProcedureReturn|EndProcedure|Macro|EndMacro|DataSection|EndDataSection|Structure|Extends|EndStructure|IncludeFile|XIncludeFile)\\b",
-      "name": "keyword.other.purebasic"
+      "name": "keyword.other.mapbasic"
     },
     {
       "match": "\\b(Global|Protected|Static)\\b",
-      "name": "storage.modifier.purebasic"
+      "name": "storage.modifier.mapbasic"
     },
     {
       "match": "#([\\w_]+)\\b",
-      "name": "constant.language.purebasic"
+      "name": "constant.language.mapbasic"
     },
     {
       "match": "\\b\\d+(\\.\\d+)?\\b",
-      "name": "constant.numeric.purebasic"
+      "name": "constant.numeric.mapbasic"
     },
     {
       "match": "(\\b\\w[\\w\\d]*|[^\\w]@[\\w\\d]*)\\(",
@@ -54,7 +54,7 @@
       {
         "1":
         {
-          "name": "entity.name.function.purebasic"
+          "name": "entity.name.function.mapbasic"
         }
       }
     }

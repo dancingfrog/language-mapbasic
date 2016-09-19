@@ -1,4 +1,4 @@
-'.source.purebasic':
+'.source.mapbasic':
   'AbortFTPFile (#Ftp) - Abort the current asyncrhonous file operation.':
     'prefix': 'AbortFTPFile'
     'body': 'AbortFTPFile(${1:#Ftp})$2'

@@ -1,4 +1,4 @@
-".source.purebasic":
+".source.mapbasic":
   "Debug Expression":
     prefix: "Debug"
     body: '''
